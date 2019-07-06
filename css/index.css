@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html{
+    height: 100%;
+    background: radial-gradient(circle, white, #7bcae4);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #e67041;
+}
+
+#container{
+    top: 80px;
+    height: 450px;
+    width: 600px;
+    background-color: #415ae6;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px -4px 0px 0px grey;
+    position: relative;
+}
+
+#intro{
+    height: 370px;
+    width: 500px;
+    background-color: yellow;
+    margin: 10px auto;
+    padding: 20px;
+    top: 10px;
+    left: 50px;
+    border-radius: 15px;
+    position: absolute;
+    //display: none;
+    
+}
+
+#facts{
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+}
+
+#score{
+    background-color: #f1ff92;
+    padding: 15px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 2px -2px darkgreen;
+    border-radius: 10px;
+}
+
+#correct{
+    position: absolute;
+    left: 270px;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+    
+}
+
+#wrong{
+    position: absolute;
+    left: 255px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+}
+
+#ques{
+    width: 500px;
+    height: 175px;
+    margin: 70px auto 10px auto;
+    background-color: #a7f286;
+    box-shadow: 2px -2px;
+    border-radius: 10px;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    line-height: 170px;
+    color: black;
+    //display: none;
+}
+
+#inst{
+    width: 500px;
+    height: 55px;
+    background-color: #faa7a7;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    box-shadow: 2px -2px;
+    border-radius: 10px;
+    //display: none;
+}
+
+#options{
+    width: 500px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: antiquewhite;
+    float: left;
+    margin-right: 52px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px -2px grey;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover, #start:hover{
+    background-color: #9c89f6;
+    color: white;
+}
+
+.box:active, #start:active{
+    box-shadow: 0px 0px;
+    top: 4px;
+}
+
+#ch4{
+    margin-right: 0;
+}  
+
+#start{
+    width: 78px;
+    padding: 10px;
+    background-color: #f2e786;
+    margin: 0px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px -2px grey;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#time{
+    width: 175px;
+    padding: 10px;
+    position: absolute;
+    top: 442px;
+    left: 420px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 240px;
+    width: 545px;
+    background: linear-gradient(#f3ca6b, #f3786c);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    border-radius: 10px;
+    z-index: 2; /*by dis we ensure tht this div is above others*/
+    display: none;
+    
+}
